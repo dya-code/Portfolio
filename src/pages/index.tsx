@@ -19,6 +19,7 @@ import unity from '../images/utlogo.png'
 
 import { Title } from '../components/Title'
 import { SubTitle } from '../components/SubTitle'
+import { SubTitleWhite } from '../components/SubTitleWhite'
 import { Content } from '../components/Content'
 
 const Index = () => {
@@ -28,25 +29,22 @@ const Index = () => {
 
       {/* Header */}
       <div className='header'>
-        <img className='h-screen w-screen brightness-[0.2] absolute -z-10' src={bg} />
-        {/* <img className='logo w-20 m-20 fixed opacity-50' src={logo} /> */}
+        <img className='h-screen w-screen brightness-[0.2] fixed -z-10' src={bg} />
+        <img className='logo w-10 m-10 fixed opacity-50' src={logo} />
         <Title>
           <Typed
             strings={[
               "Student Web Developer",
-              "Full Stack Developer",
-              "I Love Web Development",
             ]}
             typeSpeed={90}
-            backSpeed={50}
             backDelay={1900}
-            loop
+            cursorChar={'_'}
           />
         </Title>
       </div>
 
       {/* Wave Effect */}
-      <div>
+      <div className='relative'>
         <div className="wave wave1 bg-[url('../images/wave.png')]"></div>
         <div className="wave wave2 bg-[url('../images/wave.png')]"></div>
         <div className="wave wave3 bg-[url('../images/wave.png')]"></div>
@@ -54,29 +52,35 @@ const Index = () => {
       </div>
 
       {/* Main */}
-      <div className='middle flex items-center flex-col mt-[300px]'>
+      <div className='middle flex items-center flex-col bg-white pt-[300px] pb-[300px]'>
         <SubTitle>Hello, World!</SubTitle>
-        <Content>I am 15 years old Student Web Developer who likes programming and develop something.</Content>
+        <Content>I am 15 years old Student Web Developer who likes Web Development.</Content>
       </div>
 
       {/* Skills */}
-      <div className='skills flex items-center flex-col mt-[300px]'>
-        <SubTitle>Skills</SubTitle>
-        <div className='flex flex-wrap mr-[200px] ml-[200px]'>
-          <img className='w-16 m-5' src={html} />
-          <img className='w-16 m-5' src={css} />
-          <img className='w-16 m-5' src={js} />
-          <img className='w-16 m-5' src={ts} />
-          <img className='w-16 m-5' src={node} />
-          <img className='w-16 m-5' src={react} />
-          <img className='w-16 m-5' src={vue} />
-          <img className='w-16 m-5' src={tailwind} />
-          <img className='w-16 m-5' src={bootstrap} />
-          <img className='w-16 m-5' src={dotnet} />
-          <img className='w-16 m-5' src={python} />
-          <img className='w-16 m-5' src={unity} />
+      <div className='skills flex items-center flex-col pt-[300px] pb-[300px]'>
+        <SubTitleWhite>Skills</SubTitleWhite>
+        <div className='flex justify-center flex-wrap'>
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={html} />
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={css} />
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={js} />
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={ts} />
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={node} />
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={react} />
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={vue} />
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={tailwind} />
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={bootstrap} />
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={dotnet} />
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={python} />
+          <img className='w-16 m-5 border-4 border-slate-300 rounded-full' src={unity} />
         </div>
+      </div>
 
+      {/* Contact */}
+      <div className="contact flex items-center flex-col pt-[300px] pb-[315px] bg-white">
+        <SubTitle>Contact</SubTitle>
+        <a href="https://github.com/dya-code"><Content>Github</Content></a>
+        <a href="https://discord.com/users/884954874943520788"><Content>Discord</Content></a>
       </div>
 
     </Fragment>

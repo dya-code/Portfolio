@@ -21,6 +21,7 @@
   animation: wave-animate 30s linear infinite;
   z-index: 303;
   opacity: 1;
+  filter: brightness(100%);
   animation-delay: 0s;
   bottom: 0;
 }
