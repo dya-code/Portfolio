@@ -54,7 +54,7 @@ const Index = () => {
       {/* Main */}
       <div className='middle flex items-center flex-col bg-white pt-[300px] pb-[300px]'>
         <SubTitle>Hello, World!</SubTitle>
-        <Content>I am 15 years old Student Web Developer who likes Web Development.</Content>
+        <Content>I am 15 years old Student Web Developer Boseok Son who likes Web Development.</Content>
       </div>
 
       {/* Skills */}
